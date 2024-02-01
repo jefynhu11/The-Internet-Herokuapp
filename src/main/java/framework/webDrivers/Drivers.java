@@ -1,4 +1,4 @@
-package webDrivers;
+package framework.webDrivers.webDrivers;
 
 public enum Drivers {
     CHROME,

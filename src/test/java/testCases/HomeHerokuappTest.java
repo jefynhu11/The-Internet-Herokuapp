@@ -1,19 +1,26 @@
 package testCases;
 
-import org.openqa.selenium.WebDriver;
+import framework.data.DataClass;
 import org.testng.annotations.Test;
-import support.BaseTest;
+import framework.support.BaseTest;
 import tasks.HomeHerokuappTask;
-import webDrivers.DriverManager;
+import framework.webDrivers.webDrivers.DriverManager;
 
 public class HomeHerokuappTest extends BaseTest {
-    private final WebDriver driver = DriverManager.getDriver();
-    private final HomeHerokuappTask homeHerokuappTask = new HomeHerokuappTask(driver);
+    private HomeHerokuappTask homeHerokuappTask;
 
     @Test
-    public void loginTest() throws InterruptedException {
-        System.out.println("TESTE");
+    public void addRemoveElementTest() throws InterruptedException {
+        homeHerokuappTask = new HomeHerokuappTask(DriverManager.getDriver());
         DriverManager.getDriver().get("https://the-internet.herokuapp.com/");
+        homeHerokuappTask.addRemoveElement();
+    }
+    @Test(dataProvider = "loginWithCSV", dataProviderClass = DataClass.class)
+    public void loginTest(String user, String password) throws InterruptedException {
+        System.out.println("User: " + user + " - Password: " + password);
+        homeHerokuappTask = new HomeHerokuappTask(DriverManager.getDriver());
+        DriverManager.getDriver().get("https://the-internet.herokuapp.com/");
+        homeHerokuappTask.formAuthentication(user, password);
         Thread.sleep(5000);
     }
 }
