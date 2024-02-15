@@ -13,7 +13,7 @@ public class HomeHerokuappTask {
         formAuthenticationAppObject = new FormAuthenticationAppObject(driver);
     }
 
-    public void addRemoveElement() throws InterruptedException {
+    public void addRemoveElement() {
         homeHerokuappAppObject.addRemoveElementLink().click();
         homeHerokuappAppObject.addElementButton().click();
         homeHerokuappAppObject.removeElementButton().click();
@@ -21,9 +21,7 @@ public class HomeHerokuappTask {
 
     public void formAuthentication(String user, String password) {
         homeHerokuappAppObject.formAuthenticationLink().click();
-//        formAuthenticationAppObject.username().sendKeys("tomsmith");
         formAuthenticationAppObject.username().sendKeys(user);
-//        formAuthenticationAppObject.password().sendKeys("SuperSecretPassword!");
         formAuthenticationAppObject.password().sendKeys(password);
         formAuthenticationAppObject.loginButton().click();
     }

@@ -10,17 +10,15 @@ public class HomeHerokuappTest extends BaseTest {
     private HomeHerokuappTask homeHerokuappTask;
 
     @Test
-    public void addRemoveElementTest() throws InterruptedException {
+    public void addRemoveElementTest() {
         homeHerokuappTask = new HomeHerokuappTask(DriverManager.getDriver());
         DriverManager.getDriver().get("https://the-internet.herokuapp.com/");
         homeHerokuappTask.addRemoveElement();
     }
     @Test(dataProvider = "loginWithCSV", dataProviderClass = DataClass.class)
-    public void loginTest(String user, String password) throws InterruptedException {
-        System.out.println("User: " + user + " - Password: " + password);
+    public void loginTest(String user, String password) {
         homeHerokuappTask = new HomeHerokuappTask(DriverManager.getDriver());
         DriverManager.getDriver().get("https://the-internet.herokuapp.com/");
         homeHerokuappTask.formAuthentication(user, password);
-        Thread.sleep(5000);
     }
 }

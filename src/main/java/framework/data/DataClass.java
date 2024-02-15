@@ -7,18 +7,19 @@ import java.util.Iterator;
 
 public class DataClass {
 
-    private FileOperations fileOperations = new FileOperations();
+    public FileOperations fileOperations;
     private static final String csvFile = "src" + File.separator + "main" +
-            File.separator + "java" + File.separator + "resources" +
+            File.separator + "java" + File.separator + "framework" + File.separator + "resources" +
             File.separator + "login.csv";
 
     @DataProvider(name = "login")
     public static Object[][] loginTestData() {
-        return new Object[][] {{"teste@teste.com","1234567890"}};
+        return new Object[][] {{"tomsmith","SuperSecretPassword!"}};
     }
 
     @DataProvider(name = "loginWithCSV")
     public Iterator<Object[]> loginTestDataCsv(){
+        fileOperations = new FileOperations();
         return fileOperations.parseCsvData(csvFile);
     }
 

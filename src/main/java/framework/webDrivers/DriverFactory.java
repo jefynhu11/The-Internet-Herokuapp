@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-    public static WebDriver getBrower(Drivers tipos) {
+    public static WebDriver getBrower(framework.webDrivers.webDrivers.Drivers tipos) {
         switch (tipos) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();
