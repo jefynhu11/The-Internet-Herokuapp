@@ -1,4 +1,4 @@
-# The Internet Herokuapp
+# TREINAMENTO (The Internet Herokuapp)
 
 ## Índice
 
@@ -9,16 +9,16 @@
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Autor](#autor)
 
-## Descrição do projeto
+## 📄 Descrição do projeto
 
-O projeto em desenvolvimento para automação de teste em site The Internet Herokuapp. O site é material para quem faz exercicio, nosso objetivo é fazer teste, motivaram sua evolução em conhecimento de codigo e novas praticas.
+Especialidade indivíduo com conhecimento para desenvolvimento e buscar novos desafios. O projeto em desenvolvimento para automação de teste em site [The Internet Herokuapp](https://the-internet.herokuapp.com/). O site é material para quem faz exercicio, nosso objetivo é fazer teste, motivaram sua evolução em conhecimento de codigo e novas praticas.
 
-## Funcionalidades do projeto
+## ✅ Funcionalidades do projeto
 
 - TESTE 1: `Clica botão 'Add/Remove elements'`: Clica botão "Add Element" para adicionar outro elemento botão "Delete" e clica botão "Delete" desaparece elemento.
 - TESTE 2: `Entra de login`: Preenche os campos de login com CSV.
 
-## Abrir e rodar o projeto
+## 🎲 Abrir e rodar o projeto
 Após baixar o projeto, você pode abrir com Intellij IDEA.
 - MENU - File > Open
 - Procura o caminho na pasta que baixou e clicar
