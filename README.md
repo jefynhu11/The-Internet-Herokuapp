@@ -26,7 +26,7 @@ Após baixar o projeto, você pode abrir com Intellij IDEA.
 
 **Apresente as instruções necessárias para abrir e executar o projeto**
 
-## Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 - JAVA JDK 11
 - Intellij IDEA
 
