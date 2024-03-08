@@ -21,4 +21,12 @@ public class HomeHerokuappTest extends BaseTest {
         DriverManager.getDriver().get("https://the-internet.herokuapp.com/");
         homeHerokuappTask.formAuthentication(user, password);
     }
+
+    @Test
+    public void screenShotTest() {
+        System.out.println(System.getProperty("user.dir"));
+        https://www.guru99.com/pt/take-screenshot-selenium-webdriver.html
+        https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/TakesScreenshot.html
+    }
+
 }

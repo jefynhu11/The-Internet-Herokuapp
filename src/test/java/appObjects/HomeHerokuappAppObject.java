@@ -28,4 +28,7 @@ public class HomeHerokuappAppObject {
         return driver.findElement(By.cssSelector(".example #elements button"));
     }
 
+    public WebElement hoversLink() {
+        return driver.findElement(By.linkText("Hovers"));
+    }
 }
